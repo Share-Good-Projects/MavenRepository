@@ -21,7 +21,8 @@ allprojects {
         jcenter()
         maven {
             //native 仓库地址 --在当前的项目下
-            url 'file://E://GitHub//MavenRepository//appRespository//nativeRep'
+            url uri("${rootProject.projectDir}/appRepository/nativeRepo")
+//            url 'https://www.hrbing.com/repo'
         }
     }
 }

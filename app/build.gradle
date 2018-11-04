@@ -26,4 +26,5 @@ dependencies {
     androidTestImplementation rootProject.ext.dependencies["test-espresso"]
     implementation rootProject.ext.dependencies["appcompat-v7"]
     implementation rootProject.ext.dependencies["constraint-layout"]
+    implementation "com.hrbing:nativeRepo:1.0@aar"
 }
