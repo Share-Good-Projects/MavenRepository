@@ -1,25 +1,28 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 apply from:"${project.rootDir}/appConfig/depend.gradle"
 
+//buildscript 配置gradle构建项目时需要的插件的maven仓库
 buildscript {
-    
     repositories {
         google()
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
-        
-
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
+//allprojects 项目依赖库的的仓库配置
 allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            //native 仓库地址 --在当前的项目下
+            url 'file://E://GitHub//MavenRepository//appRespository//nativeRep'
+        }
     }
 }
 
